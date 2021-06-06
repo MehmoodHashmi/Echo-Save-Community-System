@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import controllerclasses.MaterialSubmissionController;
 import entities.Collector;
 import entities.Material;
 import entities.Recycler;

@@ -1,11 +1,8 @@
 package controllerclasses;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-
-import controllerclasses.LogInContorller;
 
 public class LogInContorllerTest {
 

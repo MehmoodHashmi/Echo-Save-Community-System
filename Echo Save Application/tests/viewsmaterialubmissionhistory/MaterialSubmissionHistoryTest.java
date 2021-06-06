@@ -14,7 +14,6 @@ import entities.Recycler;
 import entities.Submission;
 import enumerations.StateOfSubmission;
 import maintainmaterialtype.MaintainMaterial;
-import viewsmaterialubmissionhistory.MaterialSubmissionHistory;
 
 public class MaterialSubmissionHistoryTest {
 
