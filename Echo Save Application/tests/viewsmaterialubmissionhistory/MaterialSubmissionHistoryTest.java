@@ -13,18 +13,18 @@ import entities.Material;
 import entities.Recycler;
 import entities.Submission;
 import enumerations.StateOfSubmission;
-import maintainmaterialtype.MaintainMaterialType;
-import viewsmaterialubmissionhistory.ViewMaterialSubmissionHistory;
+import maintainmaterialtype.MaintainMaterial;
+import viewsmaterialubmissionhistory.MaterialSubmissionHistory;
 
-public class ViewMaterialSubmissionHistoryTest {
+public class MaterialSubmissionHistoryTest {
 
 	@DisplayName("when material is submitted")
 	@Test
 	public void whenMaterialIsSubmitted() {
 
 		// Arrange
-		ViewMaterialSubmissionHistory viewHistory = new ViewMaterialSubmissionHistory();
-		MaintainMaterialType admin = new MaintainMaterialType();
+		MaterialSubmissionHistory viewHistory = new MaterialSubmissionHistory();
+		MaintainMaterial admin = new MaintainMaterial();
 
 		admin.addMaterial("Computers are well designed nowadys", "Computer", 10);
 		admin.addMaterial("Laptops are well designed nowadys", "Laptop", 12);
@@ -48,10 +48,10 @@ public class ViewMaterialSubmissionHistoryTest {
 
 		// Act
 		int materialID = 0;
-		ArrayList<MaterialSubmissionController> materialSubmissionInformationList;
-		materialSubmissionInformationList = (ArrayList<MaterialSubmissionController>) viewHistory.getMaterialSubmissionInfoList(materialID);
+		ArrayList<MaterialSubmissionController> materialSubmissionList;
+		materialSubmissionList = (ArrayList<MaterialSubmissionController>) viewHistory.getMaterialSubmissionList(materialID);
 
-		int actualSubmission = materialSubmissionInformationList.size();
+		int actualSubmission = materialSubmissionList.size();
 		int expectedSubmission = 2;
 
 		// Assert

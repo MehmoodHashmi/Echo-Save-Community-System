@@ -5,9 +5,9 @@ import java.util.List;
 import controllerclasses.MaterialSubmissionController;
 import entities.Material;
 
-public class ViewMaterialSubmissionHistory {
+public class MaterialSubmissionHistory {
 
-	public List<MaterialSubmissionController> getMaterialSubmissionInfoList(int materialID) {
+	public List<MaterialSubmissionController> getMaterialSubmissionList(int materialID) {
 
 		String materialName = getMaterialName(materialID);
 		return filterMaterialSubmission(materialName);

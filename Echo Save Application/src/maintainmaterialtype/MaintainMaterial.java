@@ -4,7 +4,7 @@ import java.util.List;
 
 import entities.Material;
 
-public class MaintainMaterialType {
+public class MaintainMaterial {
 
 	public List<Material> materialList = Material.getMaterialList();
 

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import entities.EchoSaveAdmin;
 import entities.Material;
 
-class MaintainMaterialTypeTest {
+class MaintainMaterialTest {
 
 	private EchoSaveAdmin admin = EchoSaveAdmin.getInstance();
 
@@ -15,7 +15,7 @@ class MaintainMaterialTypeTest {
 	void testAddMaterial() {
 
 		// Arrange
-		MaintainMaterialType maintainMaterialType = new MaintainMaterialType();
+		MaintainMaterial maintainMaterialType = new MaintainMaterial();
 		String material = "computer";
 		String description = "computer was invented in 1956, \"" 
 				+ "+ \"it is of different kind & used for \" "
@@ -37,7 +37,7 @@ class MaintainMaterialTypeTest {
 	public void testDeleteMaterial() {
 
 		// Arrange
-		MaintainMaterialType maintainMaterialType = new MaintainMaterialType();
+		MaintainMaterial maintainMaterialType = new MaintainMaterial();
 		String material = "computer";
 		String description = "computer was invented in 1956, \"" + " + \"it is of different kind & used for \" "
 				+ "+ \"different purposes";
@@ -63,7 +63,7 @@ class MaintainMaterialTypeTest {
 	public void testChangeMaterial() {
 
 		// Arrange
-		MaintainMaterialType maintainMaterialType = new MaintainMaterialType();
+		MaintainMaterial maintainMaterialType = new MaintainMaterial();
 		String materialName = "computer";
 		
 		String materialDescription = "computer was invented in 1956, \"" 
