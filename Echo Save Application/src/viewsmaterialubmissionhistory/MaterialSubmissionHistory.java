@@ -5,7 +5,7 @@ import java.util.List;
 import controllerclasses.MaterialSubmissionController;
 import entities.Material;
 
-public class MaterialSubmissionHistory {
+public class MaterialSubmissionHistory {// I'm working in Intellij
 
 	public List<MaterialSubmissionController> getMaterialSubmissionList(int materialID) {
 
